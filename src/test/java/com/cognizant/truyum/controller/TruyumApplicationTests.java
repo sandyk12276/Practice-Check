@@ -47,7 +47,7 @@ class TruyumApplicationTests {
 	}
 	
 	@Test
-	@WithMockUser(username="user")
+	@WithMockUser(username="user",roles={"USER"})
 	public void testGetMenuItemCustomer() throws Exception {
 		ResultActions actions = mvc.perform(get("/menu-item"));
 		actions.andExpect(status().isOk());
