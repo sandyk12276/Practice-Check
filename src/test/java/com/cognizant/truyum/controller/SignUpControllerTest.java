@@ -42,7 +42,7 @@ public class SignUpControllerTest {
 	  @Test public void testSignUp() throws Exception { 
 		  
 	   User user = new User(); 
-	   user.setUserName("admin6");
+	   user.setUserName("admin7");
 	   user.setPassword("pwd1");
 	   this.mvc.perform(post("/users/adduser")
 			   .contentType(MediaType.APPLICATION_JSON)
